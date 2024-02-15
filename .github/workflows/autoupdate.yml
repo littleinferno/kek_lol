@@ -18,7 +18,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.PAT }}
           source_repo_path: littleinferno/kek_template
           upstream_branch: main
           pr_labels: automerge
