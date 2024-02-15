@@ -1,10 +1,11 @@
+name: autoupdate
 on:
   schedule:
     - cron: '*/5 * * * *'
   workflow_dispatch:
 
 jobs:
-  sync:
+  autoupdate:
     runs-on: ubuntu-latest
     permissions:
       contents: write

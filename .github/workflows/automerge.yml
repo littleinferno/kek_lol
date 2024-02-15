@@ -1,11 +1,8 @@
 on:
-  pull_request:
+  workflow_run:
+    workflows: [autoupdate]
     types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-  status: {}
+      - completed
 
 jobs:
   automerge:
